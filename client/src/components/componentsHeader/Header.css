@@ -1,0 +1,41 @@
+.nav-item {
+    position: relative; /* Ensure the text translation is relative to the list item */
+  }
+  
+  .nav-item a {
+    color: #ffffff; /* Text color for list items */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+  }
+  
+  .nav-item a:hover {
+    transform: translateY(-2px); /* Move the text up slightly on hover */
+    text-decoration: none; /* Remove underline on hover */
+    color: #5a5454; 
+  }
+  
+  /* Initial styles for the hamburger menu */
+  .hamburger {
+    display: none; /* Initially hide the hamburger menu */
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .hamburger {
+      display: block; /* Display the hamburger menu when screen width is 425px or less */
+      cursor: pointer; /* Change cursor to pointer on hover for better usability */
+    }
+  }
+  
+  /* Styles for the dropdown menu */
+  .dropdown {
+    display: none; /* Initially hide the dropdown menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #212529; /* Dark background color */
+  }
+  
+  .dropdown.active {
+    display: block; /* Show the dropdown menu when active */
+  }
+  

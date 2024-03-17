@@ -1,0 +1,23 @@
+.backgroundImg {
+    background-image: url('./assests/backgroundMap.png');
+    opacity: 0.5; /* Adjust the opacity level as needed */
+    transition: opacity 1s ease;
+    z-index: -1;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.text-container {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.hide-text {
+    opacity: 0;
+}
