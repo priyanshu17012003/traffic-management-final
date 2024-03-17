@@ -7,7 +7,7 @@
 // export default function Header() {
 //   const { currentUser } = useSelector((state) => state.user);
 //   const [menuOpen, setMenuOpen] = useState(false);
-  
+
 //   const toggleMenu = () => {
 //     setMenuOpen(!menuOpen);
 //   };
@@ -45,16 +45,15 @@
 //           </div>
 //         </div>
 //       </div>
-//     </header> 
+//     </header>
 
-   
 //   );
 // }
 
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
@@ -140,7 +139,7 @@ export default function Header() {
     //   </div>
     // </header>
 
-    <header className="p-3" style={{ backgroundColor: '#212529' }}>
+    <header className="p-3" style={{ backgroundColor: "#212529" }}>
       <div className="container">
         <div className="flex justify-between items-center">
           <div>
@@ -155,8 +154,8 @@ export default function Header() {
             <Link to="/about" className="text-white">
               About
             </Link>
-            <Link to="/about" className="text-white">
-              About
+            <Link to="/Appp" className="text-white">
+              Navigation
             </Link>
           </div>
           <div className="hidden md:block">
@@ -168,7 +167,7 @@ export default function Header() {
                   className="h-7 w-7 rounded-full object-cover"
                 />
               ) : (
-                'Sign In'
+                "Sign In"
               )}
             </Link>
           </div>
@@ -191,7 +190,13 @@ export default function Header() {
                   About
                 </Link>
               </li>
-              
+
+              <li>
+                <Link to="/Appp" className="text-white">
+                  Navigation
+                </Link>
+              </li>
+
               <li>
                 <Link to="/profile" className="btn btn-warning">
                   {currentUser ? (
@@ -201,7 +206,7 @@ export default function Header() {
                       className="h-7 w-7 rounded-full object-cover"
                     />
                   ) : (
-                    'Sign In'
+                    "Sign In"
                   )}
                 </Link>
               </li>
@@ -212,4 +217,3 @@ export default function Header() {
     </header>
   );
 }
-
