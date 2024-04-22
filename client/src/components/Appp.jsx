@@ -3,7 +3,7 @@ import { Flex, SkeletonText } from "@chakra-ui/react";
 
 import { useJsApiLoader } from "@react-google-maps/api";
 
-import PopUp from "./Popup";
+import PopUp from "./PopUp";
 import GoogleMapDisplay from "./GoogleMapDisplay";
 import gasStationIcon from "./gasStations.jpeg";
 const center = { lat: 48.8584, lng: 2.2945 };
